@@ -3,6 +3,8 @@ Lab6Robot
 
 ROBOT
 
+**###Functionality**
+Requiered Functionality Checked by Dr. Coulston 24 November
 
 ##Pre Lab
 **Consider your hardware (timer subsystems, chip pinout, etc.) and how you will use it to achieve robot control.**
