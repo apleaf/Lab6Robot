@@ -3,7 +3,7 @@ Lab6Robot
 
 ROBOT
 
-**###Functionality**
+###**Functionality**
 Requiered Functionality Checked by Dr. Coulston 24 November
 
 ##Pre Lab
