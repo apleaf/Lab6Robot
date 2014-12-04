@@ -38,7 +38,7 @@ Requiered Functionality Checked by Dr. Coulston 24 November
 ####Hardware Schematic
 ![alt text](http://i61.tinypic.com/2vxoyrt.png)
 
-**After realizing I still did not fully understand what I was doing in the lab, I went in for EI with Captain Trimble and we talked about what I needed to to to turn the wheels.  Chaning my initial plan, I decided to go with sending two pulse with modulation signals to each wheel, using set/reset and set to vary the PWM signal depending on what I wanted the robot to do.  An updated final schematic is below.
+After realizing I still did not fully understand what I was doing in the lab, I went in for EI with Captain Trimble and we talked about what I needed to to to turn the wheels.  Chaning my initial plan, I decided to go with sending two pulse with modulation signals to each wheel, using set/reset and set to vary the PWM signal depending on what I wanted the robot to do.  An updated final schematic is below.
 
 
 **Debugging**
