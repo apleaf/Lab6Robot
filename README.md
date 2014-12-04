@@ -30,13 +30,27 @@ Requiered Functionality Checked by Dr. Coulston 24 November
 
 -moveForward
 -moveBackward
--lessThan45Left
--lessThan45Right
--moreThan45Left
--moreThan45Right
+-turnBigLeft
+-turnSmallRight
+-turnSmallLeft
+-turnBigRight
 
 ####Hardware Schematic
 ![alt text](http://i61.tinypic.com/2vxoyrt.png)
+
+**After realizing I still did not fully understand what I was doing in the lab, I went in for EI with Captain Trimble and we talked about what I needed to to to turn the wheels.  Chaning my initial plan, I decided to go with sending two pulse with modulation signals to each wheel, using set/reset and set to vary the PWM signal depending on what I wanted the robot to do.  An updated final schematic is below.
+
+
+**Debugging**
+I did not have much trouble figuring out the code, but I struggled hooking up the robot correctly.  I hooked up my wires and everything and ran my code on C2C Cabusora's robot, and it worked fine.  So i figured out that i must have connected everything wrong on my robot, or their wasa component broken.  I troubleshooted some more and realized I did not have a ground hooked up correctly for the MSP.  But even fixing that did not solve my problem.  I grabbed a voltemeter and measured the voltage input at the voltage regulator, and it only measured 2 volts, so i realized it must be a component on the robot broken that I did not hook up.  I measured the resistances of the fuses and one of them showed 2.3M ohms.  This was the problem.  Mr. Evans put in a new fuse for me, and turning the robot on worked perfectly.  
+
+**Testing Methodology/Results**
+Testing my robot I ran a while loop that put the robot through all of its motions, forward, backward, small left, big left, small right, and big right.  The robot worked and I demonstrated my functionality to Dr. Coulston.
+
+**Observations and Conclusions**
+Contrary to what my first thoughts were, the hardware gave me a lot more trouble than the software.  If I had a question on the software, I could just ask an instructor to take a quick look at it to make sure I wrote it correctly or had the right idea.  For example, Dr. Coulston looked at my code one and explained how I was setting the wrong signal.  After that, I simply changed a few lines in the code.  Hardware was not so easy.  When the robot didnt work there were so many things to check.  A part such as a capacitor or the motor driver could have gone bad, the MSP430 chip could have been blow, or like in my case a fuse could have gotten burnt up.  This lab showed me the valuability of methodically going through the robot piece by piece and having a plan.  I did not go into it with this mindset and spent far more time troubleshooting my hardware than I did my software.
+
+Documentation: Dr. Coulston helped me troubleshoot some of my code and made sure I was getting correct PWM signals.  Captain Trimble helped me with my pre lab and helped me troubleshoot my hardware and gave me the idea of checking my fuses because they might be blown.  C2C Kevin Cabusora helped me initially understand what I needed to connect on my robot, such as where the capacitors went.  
 
 
 
